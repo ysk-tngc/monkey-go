@@ -16,7 +16,7 @@ let foobar = 838383;
 	l := lexer.New(input)
 	p := New(l)
 
-	program := p.ParserProgram()
+	program := p.ParseProgram()
 	checkParserErrors(t, p)
 
 	if program == nil {
